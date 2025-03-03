@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tech Stack
 
-## Getting Started
+## Front End
 
-First, run the development server:
+## Next.js and core dependencies
+Next JS (App Router + Server Actions) - For SSR, ISR and API routes
+React - for building UI components
+ReactDOM - react rendering for the dom
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## UI and Styling
+ShadCn - Style UI Components
+Tailwind CSS - For rapid styling and responsive design
+Postcss - required for tailwind processing
+Autoprefixer - ensures css compatibility
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## State management
+Redux toolkit - state management for global user/auth state
+React Redux - connection between react and rtk
+Zustand - lightweight state management for UI like video controls
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## API data fetching and backend communication
+React Query - For efficient API data fetching and caching
+Next-Auth - Authentication handling (google, credentials, jwt, etc.)
+MongoDB - MongoDB driver  for database connection
+@prisma/client - ORM for MongoDB
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Animations and UI enhancements
+Framer Motion - For animations, pager transitions, hover effects
 
-## Learn More
+## Video playback and streaming
+Plyr - For video playback
+React player - lightweight video playback for multiple video formats like mp4, etc.
 
-To learn more about Next.js, take a look at the following resources:
+## Back End
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Node Js with Express js - For building API
+Database -> Mongo DB - For flexible video meta data storage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Authentication and Security
 
-## Deploy on Vercel
+NextAuth.Js - For Authentication
+JWT - For session management
+RBAC - Role Based Access Control
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment and performance optimizations
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Vercel - Deployment platform for next.js
+.env - managing environment variables
+
+## Streaming and Video Optimization
+
+Vimeo APIs - For Video Processing and Delivery
+Live Streaming - https based livestreaming for optimizing the video playbacks
+
+## Features
+
+User Profiles
+Video Streaming
+Watch History
+Subscription and Payments
+Recommendations - OpenAI based APIs
+Search and Filtering (tag based categorizations)
+
+# Dependencies installed
+npx create-next-app@latest chalchitragpt --typescript
+npx shadcn@latest init
+npm i @tanstack/react-query
+npm i zustand
+npm i @reduxjs/toolkit
+npm i react-redux
+npm i framer-motion
+npm i plyr
+npm i react-icons
+npm i next-auth
+npm i mongodb
+npm i @prisma/client
+npm i dotenv
+npm i react-player
