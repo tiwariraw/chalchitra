@@ -1,6 +1,6 @@
 # Tech Stack
 
-## Front End
+# Front End
 
 ## Next.js and core dependencies
 Next JS (App Router + Server Actions) - For SSR, ISR and API routes
@@ -31,28 +31,28 @@ Framer Motion - For animations, pager transitions, hover effects
 Plyr - For video playback
 React player - lightweight video playback for multiple video formats like mp4, etc.
 
-## Back End
+# Back End
 
 Node Js with Express js - For building API
 Database -> Mongo DB - For flexible video meta data storage
 
-## Authentication and Security
+# Authentication and Security
 
 NextAuth.Js - For Authentication
 JWT - For session management
 RBAC - Role Based Access Control
 
-## Deployment and performance optimizations
+# Deployment and performance optimizations
 
 Vercel - Deployment platform for next.js
 .env - managing environment variables
 
-## Streaming and Video Optimization
+# Streaming and Video Optimization
 
 Vimeo APIs - For Video Processing and Delivery
 Live Streaming - https based livestreaming for optimizing the video playbacks
 
-## Features
+# Features
 
 User Profiles
 Video Streaming
