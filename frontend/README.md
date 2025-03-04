@@ -18,7 +18,7 @@
 - React Redux - connection between react and rtk
 - Zustand - lightweight state management for UI like video controls
 
-## API data fetching and backend communication
+## API data fetching and backend communication (light api handling using Next.js)
 - React Query - For efficient API data fetching and caching
 - Next-Auth - Authentication handling (google, credentials, jwt, etc.)
 - MongoDB - MongoDB driver  for database connection
@@ -54,11 +54,18 @@
 
 # Features
 
+## light api handling using Next.js
+- fetching videos (api/videos)
+- basic authentication (/api/auth)
+- UI related data (watch history, likes, comments)
+
+## Heavy backend processing
 - User Profiles
-- Video Streaming
-- Watch History
-- Subscription and Payments
-- Recommendations - OpenAI based APIs
+- AI powered video recommendation
+- payment processing (Stripe)
+- Background jobs (BullmMq)
+- HLS (video encoding and streaming)
+
 - Search and Filtering (tag based categorizations)
 
 # Dependencies installed
@@ -76,3 +83,4 @@
 - npm i @prisma/client
 - npm i dotenv
 - npm i react-player
+- npm i react-hot-toast
